@@ -1,5 +1,5 @@
 import logo from "@/public/assets/logo.png";
-import { ChevronDown, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import {
