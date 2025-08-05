@@ -2,8 +2,13 @@
 
 :root {
   --second-color: #5c738a;
+  --font-radley: var(--font-radley), serif;
+  --font-plus-jakarta-sans: var(--font-plus-jakarta-sans), sans-serif;
+  --select-item-bg-active: #ffffff;
 }
-
+body {
+  font-family: var(--font-plus-jakarta-sans);
+}
 #header-ul li {
   @apply px-2;
 }

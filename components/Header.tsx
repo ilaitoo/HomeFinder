@@ -1,6 +1,14 @@
 import logo from "@/public/assets/logo.png";
 import { ChevronDown, Globe } from "lucide-react";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 export default function Header() {
   return (
     <div className="h-[105px]  flex items-center justify-between">
@@ -19,20 +27,94 @@ export default function Header() {
         </li>
         <li>Properties</li>
         <li className="flex items-center gap-1.5">
-          Buy <ChevronDown className="text-xs -mb-1" />
+          {/* <label htmlFor="buy" className="flex items-center gap-1.5 cursor-pointer">
+            <select name="buy" id="buy" className="outline-none appearance-none w-auto bg-transparent">
+              <option className="text-[var(--second-color)]" value="buy">
+                Buy
+              </option>
+              <option className="text-[var(--second-color)]" value="sell">
+                Sell
+              </option>
+              <option className="text-[var(--second-color)]" value="rent">
+                Rent
+              </option>
+              <option className="text-[var(--second-color)]" value="mortgage">
+                Mortgage
+              </option>
+              <option className="text-[var(--second-color)]" value="commercial">
+                Find an Agent
+              </option>
+            </select>
+            <ChevronDown className="text-xs -mb-1" />
+          </label> */}
+          <Select defaultValue="buy">
+            <SelectTrigger className="w-auto border-0 rounded-none focus:outline-none">
+              <SelectValue placeholder="Buy" className="text-white" />
+            </SelectTrigger>
+
+            <SelectContent className="bg-white text-[var(--second-color)] border-0">
+              <SelectItem
+                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                value="buy"
+              >
+                Buy
+              </SelectItem>
+              <SelectItem
+                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                value="sell"
+              >
+                Sell
+              </SelectItem>
+              <SelectItem
+                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                value="rent"
+              >
+                Rent
+              </SelectItem>
+              <SelectItem
+                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                value="mortgage"
+              >
+                Mortgage
+              </SelectItem>
+              <SelectItem
+                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                value="agent"
+              >
+                Find an Agent
+              </SelectItem>
+            </SelectContent>
+          </Select>
         </li>
         <li>About</li>
         <li>Contact</li>
       </ul>
       <div className="flex gap-5 items-center">
-        <div className="flex gap-2 text-sm text-white">
-          <Globe />
-          Eng
-          <ChevronDown />
+        <div className="flex gap-2 text-sm text-white items-center">
+          <Globe className="-mr-3" />
+          <Select>
+            <SelectTrigger className="w-auto border-0 outline-0 flex items-center">
+              <SelectValue className="font-bold" placeholder="Eng" />
+            </SelectTrigger>
+            <SelectContent className="text-[var(--second-color)] font-bold flex items-center">
+              <SelectItem
+                className="text-[var(--second-color)] flex justify-center"
+                value="en"
+              >
+                English
+              </SelectItem>
+              <SelectItem
+                className="text-[var(--second-color)] flex justify-center"
+                value="ar"
+              >
+                اللغة العربية
+              </SelectItem>
+            </SelectContent>
+          </Select>
         </div>
-        <div className="bg-white rounded-md text-[var(--second-color)] px-4 py-2.5 text-sm font-bold">
+        <Button variant="default" className="cursor-pointer">
           Sign Up
-        </div>
+        </Button>
       </div>
     </div>
   );
