@@ -1,6 +1,6 @@
 import HeroSearch from "./HeroSearch";
 
-export default function () {
+export default function HeroSection() {
   return (
     <div className="w-full h-screen">
       <div className="flex gap-[12px] mb-[38px]">
