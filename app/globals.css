@@ -3,7 +3,7 @@
 :root {
   --second-color: #5c738a;
 
-  --select-item-bg-active: #ffffff;
+  --select-item-bg-active: #c0c7e1;
 }
 @theme {
   --color-second-color: #5c738a;

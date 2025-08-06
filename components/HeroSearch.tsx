@@ -54,7 +54,7 @@ export default function SearchForm() {
   };
 
   return (
-    <div className="w-auto inline-block bg-white mt-[38px] rounded-[20px] font-plus-jakarta-sans">
+    <div className="w-auto inline-block bg-white mt-[38px] rounded-[20px] font-plus-jakarta-sans shadow-lg">
       <div className="mx-[45px] my-[9px] py-[25px]">
         <h1 className="text-[32px] mb-8 font-bold">Find the best place</h1>
         <form onSubmit={handleSubmit}>
@@ -149,7 +149,7 @@ export default function SearchForm() {
                   type="button"
                   key={item}
                   onClick={() => handleFilterClick(item.toLowerCase())}
-                  className={`p-2.5 border border-black/40 rounded-[15px] text-[var(--second-color)] w-auto cursor-pointer ${
+                  className={`p-2.5 border border-black/40 rounded-[5px] text-[var(--second-color)] w-auto cursor-pointer ${
                     formData.selectedType === item.toLowerCase()
                       ? "bg-[#EAEAEA] text-black border border-[#EAEAEA]"
                       : ""

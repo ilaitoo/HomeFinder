@@ -20,9 +20,9 @@ export default function Header() {
       </div>
       <ul
         id="header-ul"
-        className="flex gap-8 text-white text-[16px] bg-[rgba(92,115,138,0.8)] h-10  items-center px-1.5 rounded-3xl shadow-md"
+        className="flex gap-8 text-white text-[16px] bg-[rgba(92,115,138,0.8)] h-10  items-center px-1.5 rounded-[5px] shadow-md cursor-pointer"
       >
-        <li className="bg-white rounded-full text-[var(--second-color)] px-3 py-1 font-bold">
+        <li className="bg-white rounded-[5px] text-[var(--second-color)] px-3 py-1 font-bold">
           Home
         </li>
         <li>Properties</li>
@@ -48,37 +48,37 @@ export default function Header() {
             <ChevronDown className="text-xs -mb-1" />
           </label> */}
           <Select defaultValue="buy">
-            <SelectTrigger className="w-auto border-0 rounded-none focus:outline-none">
+            <SelectTrigger className="w-auto border-0 rounded-none focus:outline-none cursor-pointer">
               <SelectValue placeholder="Buy" className="text-white" />
             </SelectTrigger>
 
             <SelectContent className="bg-white text-[var(--second-color)] border-0">
               <SelectItem
-                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                className="flex justify-center hover:bg-transparent cursor-pointer text-[var(--second-color)] font-bold"
                 value="buy"
               >
                 Buy
               </SelectItem>
               <SelectItem
-                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                className="flex justify-center hover:bg-transparent cursor-pointer text-[var(--second-color)] font-bold"
                 value="sell"
               >
                 Sell
               </SelectItem>
               <SelectItem
-                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                className="flex justify-center hover:bg-transparent cursor-pointer text-[var(--second-color)] font-bold"
                 value="rent"
               >
                 Rent
               </SelectItem>
               <SelectItem
-                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                className="flex justify-center hover:bg-transparent cursor-pointer text-[var(--second-color)] font-bold"
                 value="mortgage"
               >
                 Mortgage
               </SelectItem>
               <SelectItem
-                className="flex justify-center hover:bg-transparent text-[var(--second-color)] font-bold"
+                className="flex justify-center hover:bg-transparent cursor-pointer text-[var(--second-color)] font-bold"
                 value="agent"
               >
                 Find an Agent
@@ -113,7 +113,7 @@ export default function Header() {
             </SelectContent>
           </Select>
         </div>
-        <Button variant="default" className="cursor-pointer">
+        <Button variant="default" className="cursor-pointer shadow-lg">
           Sign Up
         </Button>
       </div>
