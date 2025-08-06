@@ -1,4 +1,5 @@
 "use client";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 // تعريف نوع الكائن الذي سيحتوي على بيانات النموذج
@@ -58,7 +59,7 @@ export default function SearchForm() {
         <h1 className="text-[32px] mb-8 font-bold">Find the best place</h1>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-row gap-[55px]">
-            <div className="flex flex-col">
+            <div className="flex flex-col relative">
               <label className="font-bold" htmlFor="lookingFor">
                 Looking for
               </label>
@@ -67,7 +68,7 @@ export default function SearchForm() {
                 name="lookingFor"
                 value={formData.lookingFor}
                 onChange={handleInputChange}
-                className={`bg-[#EAEAEA] p-2.5 pr-10 w-[257.89px] outline-0 mt-2 rounded-md appearance-none
+                className={`bg-[#EAEAEA] p-2.5 pr-10 w-[257.89px] outline-0 mt-2 rounded-md relative appearance-none
                   ${
                     formData.lookingFor === "" ? "text-gray-700" : "text-black"
                   }`}
@@ -88,6 +89,7 @@ export default function SearchForm() {
                   Rent
                 </option>
               </select>
+              <ChevronDown className="absolute top-[44px] right-[10px] text-[#5C738A] " />
             </div>
 
             <div className="flex flex-col">
