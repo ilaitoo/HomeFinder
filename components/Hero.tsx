@@ -1,5 +1,4 @@
 import HeroSearch from "./HeroSearch";
-import { Input } from "./ui/input";
 
 export default function () {
   return (
