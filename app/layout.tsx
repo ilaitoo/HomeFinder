@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Radley, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Image from "next/image";
+import Container from "@/components/Container";
+import HomeBackground from "@/components/HomeBackground";
 
 const radley = Radley({
   variable: "--font-radley",

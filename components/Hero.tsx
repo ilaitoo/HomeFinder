@@ -2,7 +2,7 @@ import HeroSearch from "./HeroSearch";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen mt-52">
       <div className="flex gap-[12px] mb-[38px]">
         <button className="p-2.5 bg-white text-[var(--second-color)] rounded-[5px] font-bold items-center justify-center">
           House
@@ -15,9 +15,9 @@ export default function HeroSection() {
         </button>
       </div>
       <div className="mb-[38px]">
-        <p className="text-[96px] text-white font-radley">
+        <h1 className="text-[96px] text-white font-radley ">
           Build Your Future , One Property at a Time
-        </p>
+        </h1>
 
         <HeroSearch />
       </div>

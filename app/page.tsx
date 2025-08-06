@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import RateSection from "@/components/RateSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,19 +14,20 @@ export default function Home() {
         alt="hero"
         fill
       />
-
       {/* Solid Color Overlay */}
       {/* <div className="absolute inset-0 bg-black opacity-20 -z-40" /> */}
 
       {/* Content */}
+
       <Container>
-        <div className="mb-52">
-          <Header />
-        </div>
-        <div>
-          <Hero />
-        </div>
+        <Header />
+        <Hero />
       </Container>
+      <div className="bg-black w-full h-auto">
+        <Container>
+          <RateSection />
+        </Container>
+      </div>
     </div>
   );
 }

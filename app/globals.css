@@ -14,3 +14,11 @@
 #header-ul li {
   @apply px-2;
 }
+
+#lang-menu li {
+  @apply py-1 px-2 hover:bg-gray-100 transition-colors duration-300;
+}
+
+#buy-menu a {
+  @apply py-3 px-2  hover:bg-gray-100 transition-colors duration-300;
+}
