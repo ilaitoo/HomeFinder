@@ -93,10 +93,10 @@ export default function Header() {
         <div className="flex gap-2 text-sm text-white items-center">
           <Globe className="-mr-3" />
           <Select>
-            <SelectTrigger className="w-auto border-0 outline-0 flex items-center">
-              <SelectValue className="font-bold" placeholder="Eng" />
+            <SelectTrigger className=" border-0 outline-0 flex items-center">
+              <SelectValue className="font-bold " placeholder="Eng" />
             </SelectTrigger>
-            <SelectContent className="text-[var(--second-color)] font-bold flex items-center">
+            <SelectContent className="text-[var(--second-color)] font-bold flex items-center ">
               <SelectItem
                 className="text-[var(--second-color)] flex justify-center"
                 value="en"
@@ -106,8 +106,9 @@ export default function Header() {
               <SelectItem
                 className="text-[var(--second-color)] flex justify-center"
                 value="ar"
+                defaultValue="ar"
               >
-                اللغة العربية
+                Arabic
               </SelectItem>
             </SelectContent>
           </Select>

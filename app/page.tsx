@@ -1,10 +1,11 @@
 import Container from "@/components/Container";
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen">
       {/* Background Image */}
       <Image
         src="/assets/hero.jpg"
@@ -18,7 +19,12 @@ export default function Home() {
 
       {/* Content */}
       <Container>
-        <Header />
+        <div className="mb-52">
+          <Header />
+        </div>
+        <div>
+          <Hero />
+        </div>
       </Container>
     </div>
   );
