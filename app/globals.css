@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --second-color: #5c738a;
-
-  --select-item-bg-active: #c0c7e1;
+  --second-color: #4a739c;
 }
 @theme {
-  --color-second-color: #5c738a;
+  --color-second-color: #4a739c;
+  --color-third-color: #ffd000;
+
   --font-radley: var(--font-radley), serif;
   --font-plus-jakarta-sans: var(--font-plus-jakarta-sans), sans-serif;
 }

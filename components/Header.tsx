@@ -16,7 +16,6 @@ export default function Header() {
   const [openLangMenu, setOpenLangMenu] = useState(false);
   const [openBuyMenu, setOpenByuMenu] = useState(false);
   const [lang, setLang] = useState("Eng");
-
   return (
     <div className="h-[105px]  flex items-center justify-between">
       <Link href={"/"} className="flex gap-5 ">
@@ -53,11 +52,41 @@ export default function Header() {
             }`}
             id="buy-menu"
           >
-            <Link href={"buy"}>Buy</Link>
-            <Link href={"sell"}>Sell</Link>
-            <Link href={"rent"}>Rent</Link>
-            <Link href={"mortgage"}>Mortgage</Link>
-            <Link href={"find-an-agent"}>Find An Agent</Link>
+            <Link
+              className="font-bold"
+              onClick={() => setOpenByuMenu(false)}
+              href={"buy"}
+            >
+              Buy
+            </Link>
+            <Link
+              className="font-bold"
+              onClick={() => setOpenByuMenu(false)}
+              href={"sell"}
+            >
+              Sell
+            </Link>
+            <Link
+              className="font-bold"
+              onClick={() => setOpenByuMenu(false)}
+              href={"rent"}
+            >
+              Rent
+            </Link>
+            <Link
+              className="font-bold"
+              onClick={() => setOpenByuMenu(false)}
+              href={"mortgage"}
+            >
+              Mortgage
+            </Link>
+            <Link
+              className="font-bold"
+              onClick={() => setOpenByuMenu(false)}
+              href={"find-an-agent"}
+            >
+              Find An Agent
+            </Link>
           </ul>
         </li>
         <li>About</li>
@@ -83,8 +112,12 @@ export default function Header() {
             }`}
             id="lang-menu"
           >
-            <li onClick={() => setLang("EN")}>English</li>
-            <li onClick={() => setLang("عربي")}>العربية</li>
+            <li className="font-bold" onClick={() => setLang("EN")}>
+              English
+            </li>
+            <li className="font-bold" onClick={() => setLang("عربي")}>
+              العربية
+            </li>
           </ul>
         </div>
         <Button variant="default" className="cursor-pointer shadow-lg">

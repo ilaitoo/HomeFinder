@@ -32,6 +32,12 @@ export default function RootLayout({
       <body
         className={`${radley.variable} ${plusJakartaSans.variable} antialiased`}
       >
+        <HomeBackground>
+          <Container>
+            <Header />
+          </Container>
+        </HomeBackground>
+
         {children}
       </body>
     </html>
