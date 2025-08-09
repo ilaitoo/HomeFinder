@@ -57,7 +57,6 @@ export default function FeaturedProperties() {
       </div>
       <div className="mt-[102px]  ">
         <div className="flex gap-[27px] font-plus-jakarta-sans">
-          {/* for flex */}
           {FeaturedPropertiesInformation.map((featuredProperty) => (
             <div
               key={featuredProperty.title}
