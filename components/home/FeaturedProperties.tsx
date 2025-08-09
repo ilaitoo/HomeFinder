@@ -45,7 +45,7 @@ const FeaturedPropertiesInformation: FeaturedPropertiesProps[] = [
 ];
 export default function FeaturedProperties() {
   return (
-    <div className="font-radley">
+    <div className="font-radley mt-(--margin-between-sections)">
       <div className="mx-[117px] flex flex-col gap-[51px] justify-center items-center text-center">
         <p className="text-[96px] leading-[80px]">
           Discover Our Top Investment Properties
@@ -60,7 +60,7 @@ export default function FeaturedProperties() {
           {FeaturedPropertiesInformation.map((featuredProperty) => (
             <div
               key={featuredProperty.title}
-              className="flex flex-col w-[412px] rounded-[8px] shadow-xl"
+              className="flex flex-col w-[412px] rounded-[8px] shadow-xl hover:scale-101 transition-transform duration-500"
             >
               <div>
                 <Image
@@ -114,7 +114,7 @@ export default function FeaturedProperties() {
                       {featuredProperty.price}
                     </span>
                   </p>
-                  <button className="bg-second-color text-[14px] px-[17px] py-[7px] text-center text-white  rounded-[5px]">
+                  <button className="bg-second-color text-[14px] px-[17px] py-[7px] text-center text-white  rounded-[5px] cursor-pointer">
                     Invest now
                   </button>
                 </div>

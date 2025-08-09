@@ -3,19 +3,13 @@ import logo from "@/public/assets/logo.png";
 import { ChevronDown, ChevronUp, Globe } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 export default function Header() {
   const [openLangMenu, setOpenLangMenu] = useState(false);
   const [openBuyMenu, setOpenByuMenu] = useState(false);
-  const [lang, setLang] = useState("Eng");
+  const [lang, setLang] = useState("EN");
   return (
     <div className="h-[105px]  flex items-center justify-between">
       <Link href={"/"} className="flex gap-5 ">

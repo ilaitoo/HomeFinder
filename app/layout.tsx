@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Image from "next/image";
 import Container from "@/components/Container";
-import HomeBackground from "@/components/HomeBackground";
+import HomeBackground from "@/components/home/HomeBackground";
 
 const radley = Radley({
   variable: "--font-radley",

@@ -2,6 +2,10 @@
 
 :root {
   --second-color: #4a739c;
+  --map-section-bg: #f2f5f8;
+
+  --select-item-bg-active: #c0c7e1;
+  --margin-between-sections: 132px;
 }
 @theme {
   --color-second-color: #4a739c;
